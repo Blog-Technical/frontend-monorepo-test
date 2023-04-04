@@ -10,7 +10,7 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/blog",
-        "outputPath": "apps/blog/dist"
+        "outputPath": "dist/apps/blog"
       },
       "configurations": {
         "development": {
