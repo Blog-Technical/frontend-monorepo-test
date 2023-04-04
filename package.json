@@ -2,7 +2,10 @@
   "name": "react-monorepo",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-storybook": "npx nx build-storybook blog",
+    "storybook": "npx nx storybook blog"
+  },
   "private": true,
   "dependencies": {
     "next": "13.1.1",
