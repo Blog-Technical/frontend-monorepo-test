@@ -5,7 +5,7 @@
   "scripts": {
     "build-storybook": "npx nx build-storybook blog",
     "storybook": "npx nx storybook blog",
-    "chromatic": "npx chromatic --project-token=09f2aef46d67"
+    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "private": true,
   "dependencies": {
