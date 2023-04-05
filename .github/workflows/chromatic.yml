@@ -1,6 +1,13 @@
 # .github/workflows/chromatic.yml
 
 # Other configuration required
+name: Publish to Chromatic
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
 
 jobs:
   chromatic-deployment:
