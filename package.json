@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "build-storybook": "npx nx build-storybook blog",
-    "storybook": "npx nx storybook blog"
+    "storybook": "npx nx storybook blog",
+    "chromatic": "npx chromatic --project-token=09f2aef46d67"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +54,7 @@
     "@typescript-eslint/parser": "^5.36.1",
     "babel-jest": "^29.4.1",
     "babel-loader": "8.1.0",
+    "chromatic": "^6.17.2",
     "cypress": "^12.2.0",
     "eslint": "~8.15.0",
     "eslint-config-next": "13.1.1",
@@ -75,5 +77,7 @@
     "ts-node": "10.9.1",
     "typescript": "~4.9.5",
     "url-loader": "^4.1.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "react-monorepo@0.0.0"
 }
