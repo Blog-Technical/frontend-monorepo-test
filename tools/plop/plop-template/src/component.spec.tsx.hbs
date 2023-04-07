@@ -1,0 +1,11 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+
+import { {{sentenceCase name}} } from './{{kebabCase name}}';
+
+describe('{{sentenceCase name}}', () => {
+  it('should render successfully', () => {
+    const { baseElement } = render(<{{sentenceCase name}} />);
+    expect(baseElement).toBeTruthy();
+  });
+});
