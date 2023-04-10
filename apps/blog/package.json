@@ -1,0 +1,11 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generate-style": "tailwindcss build -i ./pages/styles.css -o ./pages/styles.generated.css"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {}
+}

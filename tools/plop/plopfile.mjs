@@ -109,8 +109,8 @@ export default function (plop) {
       },
       {
         type: 'add',
-        templateFile: 'plop-template/project.json.hbs',
-        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/project.json`,
+        templateFile: 'plop-template/package.json.hbs',
+        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/package.json`,
       },
       {
         type: 'add',
@@ -147,9 +147,9 @@ export default function (plop) {
         templateFile: 'plop-template/src/index.ts.hbs',
         path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/index.ts`,
       },
-      {
-        type: 'installDependencies',
-      },
+      // {
+      //   type: 'installDependencies',
+      // },
     ],
   });
 }

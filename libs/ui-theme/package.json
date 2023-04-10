@@ -1,0 +1,16 @@
+{
+  "name": "ui-theme",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "typings": "src/index.ts",
+  "scripts": {
+    "generate": "tailwindcss-classnames -i ./tailwind.config.js -o ./src/style.generated.ts"
+  },
+  "private": true,
+  "dependencies": {
+    "tailwindcss-classnames": "^2.2.6"
+  },
+  "devDependencies": {}
+}
