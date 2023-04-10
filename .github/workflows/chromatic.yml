@@ -20,6 +20,7 @@ jobs:
         # 👇 Install dependencies with the same package manager used in the project (replace it as needed), e.g. yarn, npm, pnpm
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
+
       - name: Publish to Chromatic
         id: chromatic
         uses: chromaui/action@v1
@@ -27,5 +28,14 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-      - name: Publish Summary
-        run: echo -e "| Results |  |\n| --- | --- |\n| Build Results | ${{steps.chromatic.outputs.buildUrl}} |\n| Storybook Preview | ${{steps.chromatic.outputs.storybookUrl}} |\n| Component Count | ${{steps.chromatic.outputs.componentCount}} |" >> $GITHUB_STEP_SUMMARY
+
+      - name: Comment on pull request
+        uses: octokit/request-action@v2.x
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          route: POST /repos/${{ github.repository }}/issues/${{ github.event.number }}/comments
+          headers: |
+            Authorization: token ${{ secrets.ACCESS_TOKEN }}
+            Accept: application/vnd.github.v3+json
+          body: |
+            "The deployed Storybook is available on Chromatic: ${{ steps.chromatic.outputs.storybookUrl }}"
