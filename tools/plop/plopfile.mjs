@@ -144,6 +144,11 @@ export default function (plop) {
       },
       {
         type: 'add',
+        templateFile: 'plop-template/src/component.stories.tsx.hbs',
+        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{kebabCase name}}.stories.tsx`,
+      },
+      {
+        type: 'add',
         templateFile: 'plop-template/src/index.ts.hbs',
         path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/index.ts`,
       },
