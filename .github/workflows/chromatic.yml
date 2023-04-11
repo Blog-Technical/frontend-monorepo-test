@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [develop]
     paths:
-      - 'libs/ui-*/**/*.{js,ts,jsx,tsx}'
+      - 'libs/ui-*/**'
       - 'apps/**'
 
 jobs:
