@@ -141,6 +141,9 @@ export default function (plop) {
         templateFile: 'plop-template/src/index.ts.hbs',
         path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/index.ts`,
       },
+      // {
+      //   type: 'installDependencies',
+      // },
     ],
   });
 }
