@@ -1,0 +1,11 @@
+{
+  "name": "ui-module-layout",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+  },
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {}
+}

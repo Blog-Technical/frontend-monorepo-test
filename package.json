@@ -6,7 +6,8 @@
     "build-storybook": "npx nx build-storybook blog",
     "storybook": "npx nx storybook blog",
     "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
-    "generator": "plop component --plopfile 'tools/plop/plopfile.mjs'"
+    "generator": "plop component --plopfile 'tools/plop/plopfile.mjs'",
+    "generate-css": "npx nx run ui-theme:generate && npx nx run blog:generate-css"
   },
   "private": true,
   "dependencies": {
@@ -84,5 +85,10 @@
     "url-loader": "^4.1.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "react-monorepo@0.0.0"
+  "_id": "react-monorepo@0.0.0",
+  "volta": {
+    "node": "16.17.1",
+    "npm": "7.9.0",
+    "yarn": "1.22.10"
+  }
 }
