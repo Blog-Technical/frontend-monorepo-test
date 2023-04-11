@@ -1,5 +1,5 @@
 export const BlogListPage = (props) => {
-  return <div>BlogListPage Test!!!</div>;
+  return <div>BlogListPage</div>;
 };
 
 export default BlogListPage;
