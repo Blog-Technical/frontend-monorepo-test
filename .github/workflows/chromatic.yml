@@ -5,8 +5,12 @@ name: Publish to Chromatic
 
 on:
   push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
     paths:
       - 'apps/blog/**'
+      - 'libs/ui-*/**'
 
 jobs:
   chromatic-deployment:
