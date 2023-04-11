@@ -1,10 +1,20 @@
-import { LayoutProps } from "./types";
+import { tw } from '@react-monorepo/ui-theme';
+import { Header } from './components/header';
+import { LayoutProps } from './types';
 
-export const Layout = (props: LayoutProps) => {
+export const Layout = ({ children, menuItems }: LayoutProps) => {
+  const styles = useStyles();
+
   return (
     <div data-module="layout">
-      <h1>Welcome to Layout module</h1>
+      <Header menuItems={menuItems} />
+      <div className={tw(styles.wrapBody)}>{children}</div>
     </div>
   );
-}
+};
 
+const useStyles = () => {
+  return {
+    wrapBody: tw('px-200'),
+  };
+};

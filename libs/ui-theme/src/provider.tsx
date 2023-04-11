@@ -15,7 +15,7 @@ export const getBrandStyleConfig = (config: ThemeConfig) => ({
 });
 
 const ThemeProvider: React.FC<IThemeProvider> = ({ children, config }) => {
-  const context = React.useMemo<ThemeContextState>(() => ({}), []);
+  const context: ThemeContextState = {};
 
   return (
     <ThemeContext.Provider value={context}>
@@ -24,11 +24,6 @@ const ThemeProvider: React.FC<IThemeProvider> = ({ children, config }) => {
         style={getBrandStyleConfig(config)}
         data-theme={config.theme}
       >
-        <>
-          {/* <link rel="stylesheet" href={config.font.primary.url} /> */}
-          {/* <link rel="stylesheet" href={config.font.secondary.url} /> */}
-        </>
-
         {children}
       </main>
     </ThemeContext.Provider>
