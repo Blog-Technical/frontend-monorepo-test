@@ -7,8 +7,10 @@ on:
   pull_request:
     branches: [develop]
     paths:
+      - 'libs/ui-*/*'
       - 'libs/ui-*/**'
-      - 'apps/**'
+      - 'apps/blog/*'
+      - 'apps/blog/**'
 
 jobs:
   chromatic-deployment:
