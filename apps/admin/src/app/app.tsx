@@ -1,5 +1,5 @@
 export function App() {
-  return <div>123</div>;
+  return <div>App Admin</div>;
 }
 
 export default App;
