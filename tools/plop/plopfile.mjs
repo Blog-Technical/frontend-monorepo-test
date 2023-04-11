@@ -70,17 +70,6 @@ export default function (plop) {
     return 'fields valid';
   });
 
-  plop.setActionType('installDependencies', function (answers, config, plop) {
-    const { name } = answers;
-    console.log('installing dependencies');
-    const foundationDev = `lerna add typescript --scope=@monorepo/${toKebabCase(
-      name
-    )} --dev`;
-    return exec(`${foundationDev}`)
-      .then(() => 'dependencies installed successfully')
-      .catch((err) => `error installing dependencies: ${err}`);
-  });
-
   plop.setGenerator('component', {
     description: 'Creating new react components',
     prompts: [
@@ -152,9 +141,6 @@ export default function (plop) {
         templateFile: 'plop-template/src/index.ts.hbs',
         path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/index.ts`,
       },
-      // {
-      //   type: 'installDependencies',
-      // },
     ],
   });
 }
