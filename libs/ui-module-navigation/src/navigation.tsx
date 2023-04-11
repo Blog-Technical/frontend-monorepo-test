@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const Navigation = (props: NavigationProps) => {
   const { menuItems, currentPathname } = props;
   const styles = useStyles();
-  console.log(styles);
+
   return (
     <>
       <div className={tw(styles.root)}>
