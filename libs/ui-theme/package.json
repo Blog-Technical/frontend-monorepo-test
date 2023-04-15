@@ -6,10 +6,11 @@
   "module": "src/index.ts",
   "typings": "src/index.ts",
   "scripts": {
-    "generate": "tailwindcss-classnames -i ./tailwind.config.js -o ./src/style.generated.ts"
+    "generate": "tailwindcss-classnames -i ./tailwind.config.js -o ./src/style.generated.ts -x ./src/style.ts"
   },
   "private": true,
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "tailwindcss-classnames": "^2.2.6"
   },
   "devDependencies": {}

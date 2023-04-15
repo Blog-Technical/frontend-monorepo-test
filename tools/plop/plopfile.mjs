@@ -124,17 +124,17 @@ export default function (plop) {
       {
         type: 'add',
         templateFile: 'plop-template/src/component.tsx.hbs',
-        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{kebabCase name}}.tsx`,
+        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{camelCase name}}.tsx`,
       },
       {
         type: 'add',
         templateFile: 'plop-template/src/component.spec.tsx.hbs',
-        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{kebabCase name}}.spec.tsx`,
+        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{camelCase name}}.spec.tsx`,
       },
       {
         type: 'add',
         templateFile: 'plop-template/src/component.stories.tsx.hbs',
-        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{kebabCase name}}.stories.tsx`,
+        path: `${compPath}/ui-{{kebabCase group}}-{{kebabCase name}}/src/{{camelCase name}}.stories.tsx`,
       },
       {
         type: 'add',

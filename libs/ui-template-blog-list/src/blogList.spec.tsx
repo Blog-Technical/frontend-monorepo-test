@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { {{properCase name}} } from './{{camelCase name}}';
+import { BlogList } from './blogList';
 
-describe('{{properCase name}}', () => {
+describe('BlogList', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<{{properCase name}} />);
+    const { baseElement } = render(<BlogList />);
     expect(baseElement).toBeTruthy();
   });
 });
