@@ -29,7 +29,9 @@ const useStyles = () => {
       'flex',
       'items-center',
       'justify-between',
-      'px-200'
+      'px-100',
+      'bg-white',
+      'shadow-md'
     ),
     logoWrap: tw(),
     logo: tw('max-h-40'),

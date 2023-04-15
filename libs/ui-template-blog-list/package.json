@@ -1,0 +1,13 @@
+{
+  "name": "ui-template-blog-list",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@uiw/react-markdown-preview": "^4.1.10",
+    "@uiw/react-md-editor": "^3.20.8",
+    "react-markdown": "^8.0.7"
+  },
+  "devDependencies": {}
+}

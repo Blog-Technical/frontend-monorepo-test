@@ -14,6 +14,7 @@ module.exports = {
       30: '30px',
       40: '40px',
       50: '50px',
+      60: '60px',
       70: '70px',
       100: '100px',
       200: '200px',
@@ -72,5 +73,5 @@ module.exports = {
       transform: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

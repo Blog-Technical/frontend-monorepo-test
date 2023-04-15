@@ -12,6 +12,7 @@ export const Navigation = (props: NavigationProps) => {
         {menuItems?.map((menuItem) => {
           return (
             <Link
+              key={menuItem.url}
               className={tw(styles.link(currentPathname === menuItem.url))}
               href={menuItem.url}
             >

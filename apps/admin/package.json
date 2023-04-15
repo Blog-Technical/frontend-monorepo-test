@@ -1,0 +1,11 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@uiw/react-md-editor": "^3.6.0"
+  },
+  "devDependencies": {}
+}

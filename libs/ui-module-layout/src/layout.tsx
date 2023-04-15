@@ -15,6 +15,6 @@ export const Layout = ({ children, menuItems }: LayoutProps) => {
 
 const useStyles = () => {
   return {
-    wrapBody: tw('px-200'),
+    wrapBody: tw('px-100'),
   };
 };

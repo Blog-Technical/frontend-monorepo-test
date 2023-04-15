@@ -6,6 +6,11 @@
     "generate-css": "tailwindcss build -i ./app/styles.css -o ./app/styles.generated.css"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@uiw/react-markdown-preview": "4.0.24",
+    "@uiw/react-md-editor": "3.18.1",
+    "babel-plugin-transform-remove-imports": "^1.7.0",
+    "next-remove-imports": "1.0.7"
+  },
   "devDependencies": {}
 }
